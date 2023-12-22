@@ -7,6 +7,11 @@ const arrayTail = [];
 //Declaring array number of elements
 const numberOfElements = parseInt(prompt("Inserisci il numero di elementi dell'Array:"))
 
+//Verifying user value imput
+if (isNaN(numberOfElements) || numberOfElements <= 0) {
+    console.log("Inserisci un valore che sia valido e maggiore di 0.");
+  } else {
+
 //Assigning arrayTail random values
 for (let i = 0; i < numberOfElements; i++) {
     const randomNumber = Math.floor(Math.random() * 100) + 1;
@@ -25,3 +30,5 @@ for (let i = arrayTail.length - 5; i < arrayTail.length; i++) {
 
 //Printing 5 last numbers
 console.log("Ultimi 5 numeri recuperati:", lastNumbers);
+  
+}
