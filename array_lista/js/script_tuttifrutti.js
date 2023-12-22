@@ -1,6 +1,4 @@
 //JS - DOM test response
-console.log('JS OK');
-
 console.log("JS OK");
 
 /*  Declaring array variable "fridge" */
@@ -12,13 +10,13 @@ console.log("Stato iniziale del frigo:" + " " + fridge);
 /*  Adding "peach" value to the "fridge" array variable */
 fridge.push('pesca'); 
 /* Array "fridge" value check after push method */
-console.log("Frigo con valore pesca aggiunto" + " " + fridge); // Corretto da console.log("Frigo con valore pesca aggiunto" + " " + fruits) a console.log("Frigo con valore pesca aggiunto" + " " + fridge)
+console.log("Frigo con valore pesca aggiunto" + " " + fridge); 
 
 /* Declaring support boolean variable */
 let checkingCocomero = false;
 
 /* Checking 'cocomero' value presence in the "fridge" array */
-for (let i = 0; i < fridge.length && !checkingCocomero; i++) { // Corretto da for (let i = 0; i < fruits.length && !checkingCocomero; i++) a for (let i = 0; i < fridge.length && !checkingCocomero; i++)
+for (let i = 0; i < fridge.length && !checkingCocomero; i++) { 
   if (fridge[i] === 'cocomero') {
     checkingCocomero = true;
   }
